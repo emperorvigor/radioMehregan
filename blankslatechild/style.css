@@ -1,0 +1,328 @@
+﻿/*
+ Theme Name:     BlankSlate Child
+ Theme URI:      
+ Description:    Blankslate Child Theme
+ Author:         Elegant Themes
+ Author URI:     
+ Template:       blankslate
+ Version:        1.0.0
+*/
+ 
+@import url("../blankslate/style.css");
+ 
+/* =Theme customization starts here
+------------------------------------------------------- */
+
+#content { max-width:1100px; margin-left:auto; margin-right:auto; }
+
+article, #comments, #single-post-nav { padding: 10px 10px 10px 10px; height: auto; margin-bottom: 10px; border: 1px solid lightgrey; border-radius: 0 0 6px 6px; box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.22); }
+article, #comments { background-color: #ccffcc; }
+
+.widget-title { margin-bottom: 7px; }
+
+.fb-share-button { margin-top:7px; }
+
+.recentNews { display: block; padding: 6px 14px; white-space: nowrap; overflow: hidden; }
+
+#newsFeedList>li:nth-child(odd){
+    background-color:#fef692;
+}
+
+.customFacebook {
+	margin-top:7px;
+	display: block;
+	border-radius: 4px;
+	padding: 7px;
+	background-color: #4267b2;
+	width: 75px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 115%;
+	color: white;
+}
+.customFacebook img { margin-left:4px; }
+
+#picMenu { width:66.2%; top:0%; right:0%; max-height:295px; margin-bottom: 8px; }
+#picMenu img { width:24%; height:auto; float:left; margin:0.5%; }
+#picMenu p { display:none; }
+
+#header-slide { width: 66%; padding-bottom: 20px; overflow: hidden; }
+#postdiv article { padding:15px; float: none; }
+.footer { float: left; width: 33%; }
+
+#contentbackground { rgba(217,255,51,0.57); overflow: auto;}
+
+#single-page-div article { max-width:100%; float:none; }
+#single-page-div #comments { width:33%%; float:right; }
+
+#headslidebackground { background:#FFF }
+#headslide-container { background-color:#fcf9ce; margin-left:auto; margin-right:auto; max-width:1100px; overflow:auto; }
+.rss-box { width: 32%; float: left; padding-top: 10px; padding-left: 10px; margin-right: 10px; }
+#copyright { margin-left:auto; margin-right:auto; max-width:1100px; padding-top:20px; }
+.entry-title a { display: block; color:#b20202; }
+.entry-title { color:#b20202; font-weight:bold; margin-bottom: 15px; }
+a { text-decoration:none; color: #924e4e; }
+#header { margin-left:auto; margin-right:auto; max-width:1100px; }
+
+.xoxo ul li ul li { display:none; }
+
+#primary .xoxo > li  { float: left; width: 20%; padding: 0px 13px 15px 13px; }
+#primary .xoxo ul { display:inline; }
+#primary .xoxo a { color:#6C6B69; }
+#primary .xoxo h3 { font-weight:bold; }
+
+#nav-below { min-height: 35px; font-weight: bold; font-size: 20px; margin: 0px 10px; }
+.nav-previous { float:left; margin-top:10px; }
+.nav-next { float:right; margin-top:10px; }
+#single-post-nav #nav-below .nav-previous { float:none; margin-top:10px; }
+#single-post-nav #nav-below .nav-next { float:none; margin-top:10px; }
+#single-post-nav #nav-below { margin:0px; }
+
+#comments { margin-top:10px; }
+#comment { margin: 10px 0px; width:100%; }
+#respond { padding: 0px 10px 10px 10px; }
+
+.comments ul { background: none repeat scroll 0% 0% #CFC; padding: 10px 10px; margin: 7px 3px 7px 0px; max-width: 100%; }
+.comments ul ul { background: none repeat scroll 0% 0% #B5E8BE; }
+.comments ul ul ul{ background: none repeat scroll 0% 0% #CFC; }
+.comments ul ul ul ul { background: none repeat scroll 0% 0% #B5E8BE; }
+.comments ul ul ul ul ul { background: none repeat scroll 0% 0% #CFC; }
+.comments ul ul ul ul ul ul { background: none repeat scroll 0% 0% #B5E8BE; }
+.comments ul ul ul ul ul ul ul{ background: none repeat scroll 0% 0% #CFC; }
+.comments-title { background: none repeat scroll 0% 0% #CFC; padding: 10px 10px; margin: 7px 3px 7px 0px; max-width: 100%; }
+.comment-meta.commentmetadata { float: left; margin-top: -30px; margin-left: 37px; font-size: 11px; font-style: italic; }
+.comment-reply-title { font-weight: bold; }
+.comment-form-comment label { visibility: hidden; display: none; }
+#comment { margin-bottom: 15px; width: 99%; height: auto; }
+.comment-body p { margin: 8px 3px 5px 3px;}
+
+.header { font-weight: bold; font-size:24px; }
+.header h1.entry-title { padding: 10px; }
+
+.form-submit { margin-top:10px; }
+
+#search { padding-top: 7px; padding-bottom: 5px; width: 47%; float: left; }
+#searchform { padding: 0px 10px; float: left; }
+#branding { padding: 0px 10px; width: 50%; float: right; }
+
+#footer { color:#6C6B69; background:#2C2B28; }
+
+#copyrighttext { padding:0px 10px 10px 10px; }
+#copyrighttext a { color:#6C6B69; font-weight:bold; }
+
+#headerbackground { background:#fff; position: relative; box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.28); z-index: 999; }
+
+/* Custom css */
+	/* Enter Your Custom CSS Here */
+	body { font-family: arial; font-size:100%; }
+	/*.rowdiv article { width:30%; float:right ! important; }*/
+	.rowdiv { width:100%; overflow: auto; }
+	#single-page-div { overflow: auto; }
+	article .entry-meta { margin-top:7px; }
+	.entry-date { font-size: 85%; padding-bottom: 10px; display: block; }
+	.cat-links { font-size: 85%; padding-top: 12px; display: block; font-weight:bold; }
+	.reply { font-size: 85%; margin-top: 10px; }
+	.fn, .says { font-size: 85%; }
+	.single-post-nav { padding: 10px 10px 20px 10px; height: auto; margin-bottom: 10px; border: 1px solid lightgrey; background-color: #ccffcc; border-radius: 0 0 6px 6px; box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.22); }
+	.single-post-nav #nav-below .nav-previous,
+	.single-post-nav #nav-below .nav-next { float:inherit; }
+	.readMoreSpan { font-weight: bold; font-size: 120%; }
+	#postdiv { float: right; width: 66%; }
+	#searchsubmit, #s {	font-size: 120%; }
+	#content { background-color: rgb(254, 255, 193); overflow:auto; }
+
+	.columndiv { width:33%; float:right; }
+	#midcolumndiv { width:32%; margin-right: 10px; margin-left: 10px; }
+	#leftcolumndiv { float:left; }
+
+	article { overflow:auto; }
+
+	#single-page-div article { background-color: transparent; border: none; box-shadow: none; }
+	#single-page-div article .entry-content article { background-color: #ccffcc; border: 1px solid lightgrey; box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.22); }
+
+	.alignleft { float:left; margin: 10px 10px 10px 0px; }
+	.alignright { float:right; margin: 10px 0px 10px 10px; }
+
+	#headerbackground { background: linear-gradient(rgba(210, 210, 210, 0.3), rgba(255,0,0,0)); }
+	.headerrightsidebar { float:right; width:66%; }
+	.headerleftsidebar { float:left; width:34%; overflow: hidden; }
+	.margindivHeader { margin-right:0px; }
+	#wpp-2 .widgettitle { margin-bottom:15px; }
+
+	.widget { list-style:none; }
+
+	.wp-audio-shortcode { margin: 10px 0px; }
+
+	#mrOverflow { overflow:hidden; }
+
+	body { color: #6C6C6C; }
+	p { font-size: 1.1em; line-height:22px; font-weight: bold; }
+	h6 { font-size:0.75em; }
+	h5 { font-size:0.9em; }
+	h4 { font-size:1.25em; }
+	h3 { font-size:1.5em; }
+	h2 { font-size:1.6em; }
+	h1 { font-size:1.7em; }
+
+	.thumbContainer { max-width:50%; float:left; margin:5px 10px 10px 0px; }
+	#thumbContainer { max-width:100%; }
+	.attachment-post-thumbnail { max-width:100%; height:auto; }
+
+	.searchExcerptContainer { float: right; margin-top:5px; width: 65%; }
+	.thumbDiv { max-width:33%; }
+
+	/* menu */
+	#menuIconDiv {
+	  display: none;
+	  /*background: #CCFFCC;*/
+	  color: #B20202;
+	  padding: .8em 1.5em;
+	  overflow: auto;
+	}
+
+	.sub-menu li a { font-size: 85%; background: white; padding: 0.8em 2em; }
+
+	#menuIconDiv div { float: right; cursor:pointer; }
+
+	#menu-mainmenu2 {
+	  width: 100%;
+	  /*background: #CCFFCC;*/
+	  font-weight:bold;
+	}
+
+	.menu-mainmenu2-container {    
+		display: block;
+		text-align: center;
+	  }
+	  .menu a {
+		display: block;
+		text-shadow: 4px 4px 2px #aeaeae, 2px 2px 5px #aeaeae;
+		/*background: #CCFFCC;*/
+		color: #B20202;
+		text-decoration: none;
+		padding: .8em .7em;
+		font-size: 140%;
+		letter-spacing: 0px;
+		position: relative;
+		border-left: 1px solid white;
+	  }
+	  .menu{  
+		vertical-align: top; 
+		display: inline-block;
+	  }
+	  .menu li{ position: relative; }
+	  .menu > li { 
+		float:right;  
+	  }
+	  .menu li:hover > a { color:orange; border:none; border-left:1px solid orange; }
+
+		.menu li a:first-child:nth-last-child(2):before { 
+		 content:""; 
+		 position: absolute; 
+		 height:0; 
+		 width: 0; 
+		 border: 5px solid transparent; 
+		 top: 50% ;
+		 left:5px;/**/
+	   }
+	   
+	   /* submenu positioning*/
+	.menu ul {
+	  position: absolute;
+	  white-space: nowrap;
+	  z-index: 1;
+	  display:none;
+	  /*right: -99999em;*/
+	}
+	.menu > li:hover > ul {
+	  right: auto;
+	  padding-top: 0;
+	  min-width: 100%;
+	  display:block;
+	}
+
+	.menu > li li:hover > ul { 
+	 /* margin-right: 1px */
+	  right: 100%;
+	  top: -1px;
+	  display:block;
+	}
+
+	/* arrow hover styling */
+	.menu > li > a:first-child:nth-last-child(2):before { 
+	  border-top-color: #aaa; 
+	}
+	.menu > li:hover > a:first-child:nth-last-child(2):before {
+	  border: 5px solid transparent; 
+	  border-bottom-color: orange; 
+	  margin-top:-5px
+	}
+	.menu li li > a:first-child:nth-last-child(2):before {  
+	  border-right-color: #aaa; 
+	  margin-top: -5px
+	}
+	.menu li li:hover > a:first-child:nth-last-child(2):before {
+	  border: 5px solid transparent; 
+	  border-left-color: orange;/**/
+	  left: 10px; /**/
+	}
+
+	/* ----- Media ------ */
+	@media only screen and (max-width: 1010px) {
+		#midcolumndiv { width: 31%; }
+	}
+
+	@media only screen and (max-width: 820px) {
+		.thumbContainer,
+		.thumbDiv { max-width:100%; margin-right:0px; float: none; }
+		.searchExcerptContainer { width:100%; }
+
+	}
+
+	@media only screen and (min-width: 801px) {
+	  #menuDivForDisplay { display: block !important; }
+	}
+
+	@media only screen and (max-width: 800px) {
+	  #menuDivForDisplay { display:none; }
+	  #menuIconDiv { display:block; }
+	.sub-menu li a { background: #f3f3f3; font-size: 100%; }
+	  
+	  #menu-mainmenu2 li { float: none; }
+	  .menu ul {
+		display: block;
+		position: inherit;
+	  }
+	  .menu-mainmenu2-container { text-align:right; }
+	  .menu-mainmenu2-container li { margin-right:4%; border:1px solid #f3f3f3; }
+	  
+	  .menu > li > ul {
+		display:block;
+	  }
+	  .menu > li li:hover > ul { 
+		top:0;
+		right: auto;
+	  }
+	  
+	}
+
+	@media only screen and (max-width: 770px) {
+		.headerrightsidebar,
+		.headerleftsidebar { width: 100% }
+	}
+
+	@media only screen and (max-width: 685px) {
+		.footer,
+		#postdiv,
+		.columndiv,
+		#midcolumndiv,
+		#picMenu { width: 100% }
+		#midcolumndiv { margin:0; }
+	}
+
+	@media only screen and (max-width: 685px) {
+		#site-title { margin: 7px auto; max-width: 284px; }
+		#branding { width: 100%; padding:0; }
+		#search { width:100%; }
+		
+	}
